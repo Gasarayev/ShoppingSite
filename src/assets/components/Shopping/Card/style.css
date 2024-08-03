@@ -63,6 +63,7 @@
     top: 30px;
     left: 30px;
     font-size: 22px;
+    cursor: pointer;
 }
 
 .fade-in:hover .card_head_icon{
@@ -113,4 +114,5 @@
     line-height: 40px;
     width: 100%;
     transition: .5s;
+    cursor: pointer;
 }

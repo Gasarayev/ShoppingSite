@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./assets/style/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./assets/components/Layout/Header";
@@ -6,16 +7,29 @@ import Categories from "./assets/components/Shopping/Categories";
 import Shopping from "./assets/components/Shopping";
 import Context from "./assets/contexts/context";
 import FavContext from "./assets/contexts/favContext";
+import Basket from "./assets/components/Basket";
 
 function App() {
   return (
     <>
       <Context>
         <FavContext>
-          <Header />
-          <MainPage />
-          <Categories />
-          <Shopping />
+          <Router>
+            <Header />
+            <Routes>
+            <Route
+                path="/"
+                element={
+                  <>
+                    <MainPage />
+                    <Categories />
+                    <Shopping />
+                  </>
+                }
+              />
+              <Route path="/basket" element={<Basket />} />
+            </Routes>
+          </Router>
         </FavContext>
       </Context>
     </>

@@ -1,0 +1,94 @@
+.product_img img{
+    width: 70%;
+}
+
+.product_content{
+    width: 70%;
+}
+
+.product_content h2{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    color: #282828;
+}
+
+.product_delivery{
+    height: 40px;
+    line-height: 40px;
+    background: #f5f5f5;
+    margin-top: 53px;
+    text-align: center;
+}
+
+.price_raiting{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.old_price{
+    font-weight: 500;
+    color: #b9b4c7;
+    text-decoration: line-through;
+    line-height: 30px;
+}
+
+.raiting_stars{
+    color: #fac451;
+}
+
+.current_price{
+    display: inline-block;
+    font-size: 24px;
+    color: #fe4c50;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 2px;
+}
+
+.product_quantity{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.quantity_btn{
+    width: 132px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px #e5e5e5;
+}
+
+.fav_icon{
+    width: 40px;
+    height: 40px;
+    border: solid 1px #e5e5e5;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.handle_quantity{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.handle_quantity:hover{
+    color: #B5AEC4;
+}
+
+.handle_quantity_numb{
+    font-weight: 500;
+    color: #232530;
+}
+
+.fav_icon:hover{
+    color: #fe4c50;
+}

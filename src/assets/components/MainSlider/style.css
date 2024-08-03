@@ -1,0 +1,47 @@
+.bgImg{
+    width: 100%;
+    height: 115vh;
+    background-image: url("https://preview.colorlib.com/theme/coloshop/images/slider_1.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mainPage_content{
+    width: 50%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.mainPage_content h6{
+    font-weight: 500;
+    margin-bottom: 29px;
+}
+
+.mainPage_content h1{
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.mainPage_content button{
+    width: 140px !important;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    border: none;
+    background-color: #FE4C50;
+    margin-top: 32px;
+    transition: .5s;
+    
+}
+
+.mainPage_content button:hover{
+    background-color: #fe4c4fbc;
+}

@@ -1,0 +1,25 @@
+.ctgry_filtered{
+    list-style: none;
+    text-decoration: none;
+}
+
+.ctgry_filtered li{
+    height: 40px;
+    min-width: 102px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    border: solid 1px #ebebeb;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.ctgry_filtered li.selected {
+    background-color: #fe4c50;
+    color: #fff;
+  }

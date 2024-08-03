@@ -1,0 +1,12 @@
+.shopping_head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.underline{
+    width: 100px;
+    height: 7px;
+    background-color: #FE4C50;
+    margin-top: 20px;
+}

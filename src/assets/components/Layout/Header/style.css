@@ -1,0 +1,35 @@
+.navHead{
+    background: #FFFFFF;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.navLogo{
+    font-size: 24px;
+    color: #1e1e27;
+    font-weight: 700;
+}
+
+.navMenu{
+    color: #1e1e27;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.navIcons{
+    font-size: 14px;
+    color: #1e1e27;
+}
+
+@media (max-width: 991px) {
+    .navbarCont{
+        justify-content: space-around !important;
+    }
+    .navMenu{
+        align-items: center;
+    }
+    .navIcons{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+  }

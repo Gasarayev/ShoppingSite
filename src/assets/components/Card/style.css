@@ -1,0 +1,116 @@
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+  height: 380px;
+  transition: .5s;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ctgry_filtered li {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ctgry_filtered li.selected {
+  background-color: #fe4c50;
+  color: #fff;
+}
+
+.fade-in:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} 
+
+.fade-in:hover .card_footer_button {
+    background-color: #fe4c50;
+} 
+
+.card_head{
+    position: relative;
+}
+
+.card_head_discount{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: #fe4c50;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: 50px;
+    height: 22px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_head_icon{
+    color: #fff;
+    transition: .5s;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 22px;
+}
+
+.fade-in:hover .card_head_icon{
+    color: #1e1e27;
+}
+
+.fade-in:hover .card_head_icon:hover{
+    color: #fe4c50;
+}
+
+
+
+.card_body_img{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.card_bodyTitle{
+    padding: 0 35px;
+    min-height: 50px;
+    color: #1e1e27;
+    line-height: 20px;
+    text-align: center;
+}
+
+.card_body_price{
+    font-size: 16px;
+    color: #fe4c50;
+    font-weight: 600;
+}
+.card_body_price span{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #b5aec4;
+    text-decoration: line-through;
+
+}
+.card_footer_button{
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    transition: .5s;
+}

@@ -9,7 +9,18 @@ function Card() {
   const { favs, setFavs } = useContext(FavContextApi);
 
   const handleAddToFavorites = (product) => {
-    setFavs((prevFavs) => [...prevFavs, product]);
+    setFavs((prevFavs) => {
+      const existingProduct = prevFavs.find((fav) => fav.id === product.id);
+      if (existingProduct) {
+        return prevFavs.map((fav) =>
+          fav.id === product.id
+            ? { ...fav, quantity: fav.quantity + 1 }
+            : fav
+        );
+      } else {
+        return [...prevFavs, { ...product, quantity: 1 }];
+      }
+    });
   };
 
   return (

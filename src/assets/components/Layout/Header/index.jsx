@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
 import { Nav, Navbar } from "react-bootstrap";
 import { FaUser } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
@@ -23,8 +21,8 @@ function Header() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="d-flex justify-content-center p-3 gap-4 navMenu">
-              <Nav.Link href="#home">HOME</Nav.Link>
-              <Nav.Link href="#features">SHOP</Nav.Link>
+              <Nav.Link as={Link} to="/" href="#home">HOME</Nav.Link>
+              <Nav.Link as={Link} to="/shopping-page" href="#features">SHOP</Nav.Link>
               <Nav.Link href="#pricing">PROMOTION</Nav.Link>
               <Nav.Link href="#pricing">PAGES</Nav.Link>
               <Nav.Link href="#pricing">BLOG</Nav.Link>

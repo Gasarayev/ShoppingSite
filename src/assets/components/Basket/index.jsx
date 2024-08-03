@@ -8,30 +8,36 @@ import { FaStarHalfStroke } from "react-icons/fa6";
 import { PiHeartStraight } from "react-icons/pi";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 function Basket() {
   const { favs, setFavs } = useContext(FavContextApi);
 
   const handleQuantityChange = (product, increment) => {
-    const updatedFavs = favs
-      .map((fav) =>
-        fav.id === product.id
-          ? { ...fav, quantity: fav.quantity + (increment ? 1 : -1) }
-          : fav
-      )
-      .filter((fav) => fav.quantity > 0);
+    const updatedFavs = favs.map((fav) => {
+      if (fav.id === product.id) {
+        const newQuantity = fav.quantity + (increment ? 1 : -1);
+        return { ...fav, quantity: newQuantity < 1 ? 1 : newQuantity };
+      }
+      return fav;
+    });
     setFavs(updatedFavs);
+  };
+
+  const removeBasket = (product) => {
+    setFavs((prevFavs) => prevFavs.filter((fav) => fav.id !== product.id));
   };
 
   return (
     <div>
       {favs.map((product) => (
-        <div key={product.id} className="container pt-5">
+        <div key={product.id} className="container pt-5 basket">
           <div className="row mt-5">
             <div className="col-md-6">
               <div className="product_img">
                 <img src={product.basket_img} alt={product.title} />
               </div>
+
             </div>
 
             <div className="col-md-6">
@@ -54,7 +60,7 @@ function Basket() {
                       <div className="price_raiting">
                         <p className="current_price">
                           {" "}
-                          ${product.price - product.discount}.00
+                          ${(product.price - product.discount) * product.quantity}.00
                         </p>
                         <p className="raiting_stars">
                           <FaStar />
@@ -67,7 +73,7 @@ function Basket() {
                     </p>
                   ) : (
                     <p className="price_raiting">
-                      <p className="current_price">${product.price}.00</p>
+                      <p className="current_price">${product.price * product.quantity}.00</p>
 
                       <p className="raiting_stars">
                         <FaStar />
@@ -101,7 +107,9 @@ function Basket() {
                 </div>
               </div>
             </div>
+
           </div>
+          <span onClick={()=>{removeBasket(product)}} className="exitBasket"><IoIosCloseCircleOutline /></span>
         </div>
       ))}
     </div>

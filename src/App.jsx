@@ -8,6 +8,7 @@ import Shopping from "./assets/components/Shopping";
 import Context from "./assets/contexts/context";
 import FavContext from "./assets/contexts/favContext";
 import Basket from "./assets/components/Basket";
+import ShopPage from "./assets/pages/Shop";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                   </>
                 }
               />
+              <Route path="/shopping-page" element={<ShopPage/>}/>
               <Route path="/basket" element={<Basket />} />
             </Routes>
           </Router>

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { ContextApi } from "../../contexts/context";
+import { ContextApi } from "../../../contexts/context";
 import { PiHeartStraight } from "react-icons/pi";
-import "../Card/style.css"
+import "./style.css"
 
 function Card() {
   const { filteredProducts } = useContext(ContextApi);
@@ -13,7 +13,7 @@ function Card() {
         <div className="row">
           {filteredProducts.map((info) => {
             return (
-              <div className="col-md-3 p-0 mb-5 fade-in" key={info.id}>
+              <div className="col-md-3 p-0 mb-4 fade-in" key={info.id}>
                 <div className="card_head">
                   <div className="card_head_icon">
                     <PiHeartStraight />

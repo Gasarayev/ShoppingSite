@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import { ContextApi } from "../../contexts/context";
-import "../FilterCategory/style.css";
+import { ContextApi } from "../../../contexts/context";
+import "./style.css";
 
 function FilterCategory() {
   const { products, setFilteredProducts } = useContext(ContextApi);

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Categories/style.css"
+import "./style.css"
 function Categories() {
   return (
     <div className='container'>

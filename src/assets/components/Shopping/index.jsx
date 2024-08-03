@@ -1,7 +1,7 @@
 import React from "react";
 import "../Shopping/style.css";
-import Card from "../Card/index";
-import FilterCategory from "../FilterCategory";
+import Card from "./Card/index";
+import FilterCategory from "./FilterCategory";
 
 function Shopping() {
   return (

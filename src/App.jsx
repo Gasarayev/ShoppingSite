@@ -12,6 +12,7 @@ import ShopPage from "./assets/pages/Shop";
 import DealWeek from "./assets/components/DealWeek/idnex";
 import BestSellers from "./assets/components/BestSellers";
 import InfoSite from "./assets/components/InfoSite";
+import Blogs from "./assets/components/Blogs";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
                     <DealWeek/>
                     <BestSellers/>
                     <InfoSite/>
+                    <Blogs/>
                   </>
                 }
               />

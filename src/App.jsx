@@ -10,6 +10,7 @@ import FavContext from "./assets/contexts/favContext";
 import Basket from "./assets/components/Basket";
 import ShopPage from "./assets/pages/Shop";
 import DealWeek from "./assets/components/DealWeek/idnex";
+import BestSellers from "./assets/components/BestSellers";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                     <Categories />
                     <Shopping />
                     <DealWeek/>
+                    <BestSellers/>
                   </>
                 }
               />

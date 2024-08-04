@@ -9,6 +9,7 @@ import Context from "./assets/contexts/context";
 import FavContext from "./assets/contexts/favContext";
 import Basket from "./assets/components/Basket";
 import ShopPage from "./assets/pages/Shop";
+import DealWeek from "./assets/components/DealWeek/idnex";
 
 function App() {
   return (
@@ -25,11 +26,13 @@ function App() {
                     <MainPage />
                     <Categories />
                     <Shopping />
+                    <DealWeek/>
                   </>
                 }
               />
               <Route path="/shopping-page" element={<ShopPage/>}/>
               <Route path="/basket" element={<Basket />} />
+              {/* <Route path="/" element ={} /> */}
             </Routes>
           </Router>
         </FavContext>

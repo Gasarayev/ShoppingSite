@@ -1,3 +1,7 @@
+.fade-in{
+cursor: pointer;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff;

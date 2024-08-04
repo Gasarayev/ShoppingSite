@@ -13,6 +13,8 @@ import DealWeek from "./assets/components/DealWeek/idnex";
 import BestSellers from "./assets/components/BestSellers";
 import InfoSite from "./assets/components/InfoSite";
 import Blogs from "./assets/components/Blogs";
+import NewsLetter from "./assets/components/NewsLetter";
+import Footer from "./assets/components/Layout/Footer";
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
                     <BestSellers/>
                     <InfoSite/>
                     <Blogs/>
+                    <NewsLetter/>
                   </>
                 }
               />
@@ -40,6 +43,7 @@ function App() {
               <Route path="/basket" element={<Basket />} />
               {/* <Route path="/" element ={} /> */}
             </Routes>
+            <Footer/>
           </Router>
         </FavContext>
       </Context>

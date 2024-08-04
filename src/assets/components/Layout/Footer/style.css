@@ -1,0 +1,35 @@
+.footer_nav{
+    height: 130px;
+}
+
+.footer_nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.footer_nav li{
+    cursor: pointer;
+}
+
+.footer_social{
+    height: 130px;
+}
+
+.footer_social ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+}
+
+.footer_social svg{
+    color: #51545f;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer_social svg:hover{
+    color: #fe4c50;
+}

@@ -11,6 +11,7 @@ import Basket from "./assets/components/Basket";
 import ShopPage from "./assets/pages/Shop";
 import DealWeek from "./assets/components/DealWeek/idnex";
 import BestSellers from "./assets/components/BestSellers";
+import InfoSite from "./assets/components/InfoSite";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                     <Shopping />
                     <DealWeek/>
                     <BestSellers/>
+                    <InfoSite/>
                   </>
                 }
               />

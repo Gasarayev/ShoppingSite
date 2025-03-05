@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useState } from "react";
 
 
 export const ContextApi = createContext(null);
-const URL_BASE = 'http://localhost:3000/products';
+const URL_BASE = 'https://colorshopapi.onrender.com/api/products ';
 
 function Context({ children }) {
   const [products, setProducts] = useState([]);

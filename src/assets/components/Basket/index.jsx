@@ -14,6 +14,7 @@ function Basket() {
   const { favs, setFavs } = useContext(FavContextApi);
 
   const handleQuantityChange = (product, increment) => {
+    
     const updatedFavs = favs.map((fav) => {
       if (fav.id === product.id) {
         const newQuantity = fav.quantity + (increment ? 1 : -1);

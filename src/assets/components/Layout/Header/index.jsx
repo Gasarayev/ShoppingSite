@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <>
-      <Navbar data-bs-theme="light" className="navHead" expand="lg" fixed="top">
+      <Navbar data-bs-theme="light" className="navHead" expand="lg">
         <Container className="d-flex justify-content-between navbarCont">
           <Navbar.Brand as={Link} to="/" className="navLogo" href="#home">
             COLO<span style={{ color: "#fe4c50" }}>SHOP</span>
